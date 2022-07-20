@@ -12,7 +12,7 @@ When you click at any image, a modal will appear with 100% of height and width. 
 
 # How can I use it?
 
-First, you can clone the project at your folder. Use the commande line on you folder:
+First, you can clone the project at your folder. Use the command line:
 
  > git clone https://github.com/Vinicius-PR/Gallery-JS-Vanilla.git
  
