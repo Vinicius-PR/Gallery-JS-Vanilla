@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card_img{
+  height: 18.75rem;
+  width: 18.75rem;
+  overflow: hidden;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+
+.card_img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.08);
+}
+
+.small_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.modal_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+#modal_image {
+  height:80%;
+  width: 80%;
+  object-fit: cover;
+}
+
+@media (max-width: 570px) {
+  #modal_image {
+    height:auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+#button_close {
+  color: white;
+  background-color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 0rem 0.45rem;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+
+#button_close:hover {
+  background-color: goldenrod;
+  color: black;
+}
+
+.modal_active {
+  visibility: visible;
+  opacity: 1;
+}
